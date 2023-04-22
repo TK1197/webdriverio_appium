@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@resource-id='com.google.android.calculator:id/formula_scroll_view']"
+}

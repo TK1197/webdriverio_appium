@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.ImageButton[contains(@resource-id,'com.google.android.calculator:id/digit_8')]"
+}
