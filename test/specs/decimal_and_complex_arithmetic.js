@@ -77,8 +77,8 @@ describe('Validate decimal calculation and complex arithmetic operations', () =>
                     break;
 
                 case '.':
-                    cal_objects.calNum(keyInDigit).waitForExist({ timeout: 5000 })
-                    cal_objects.calNum(keyInDigit).click()
+                    cal_objects.calNum('point').waitForExist({ timeout: 5000 })
+                    cal_objects.calNum('point').click()
                     break;
             }
         }

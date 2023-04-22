@@ -7,19 +7,17 @@ describe('Validate erase function by removing one text', () => {
 
     it('Erase operation', async() => {
 
-        /*await $(`//android.widget.ImageButton[contains(@content-desc,"${a}")]`).click()
-        await $("//android.widget.ImageButton[@content-desc='plus']").click()
-        await $(`//android.widget.ImageButton[contains(@content-desc,"${b}")]`).click()*/
+        //8+4
+        await cal_objects.calNum(a).click()
+        await cal_objects.plusBtn.click()
+        await cal_objects.calNum(b).click()
 
-        cal_objects.calNum(a).click()
-        cal_objects.plusBtn.click()
-        cal_objects.calNum(b).click()
-
-        //get the before and after value state
+        //get the before and after value state => 8+
         original_value = await cal_objects.beforeClearFieldState.getText()
         await cal_objects.deleteBtn.click()
         after_remove_one_digit = await cal_objects.beforeClearFieldState.getText()
 
+        //8+
         assert.equal(after_remove_one_digit, original_value.slice(0, -1))
     })
 

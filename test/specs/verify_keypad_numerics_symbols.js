@@ -11,7 +11,6 @@ describe('Validate calculator keypad numbers and symbols', () => {
         for(i = 0; i < arrayOfNumbersAndSymbols.length; i++){
         
             cal_objects.calNum(arrayOfNumbersAndSymbols[i]).isExisting()
-            //$(`//android.widget.ImageButton[contains(@content-desc,'${arrayOfNumbersAndSymbols[i]}')]`).isExisting()
         }
     })
 })

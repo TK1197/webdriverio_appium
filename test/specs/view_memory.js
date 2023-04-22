@@ -34,7 +34,7 @@ describe('Basic Arithmetic Operations', () => {
         await cal_objects.moreDetailBtn.click()
         await cal_objects.generalTextField('Clear').click()
         await cal_objects.generalTextField('Clear history and memory?').click()
-        await cal_objects.generalTextField('Clear').click()
+        await cal_objects.clearHistoryPermanently.click()
 
         after_clear_state = await cal_objects.completeClearOption.getText()
 

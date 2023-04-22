@@ -84,6 +84,11 @@ class calculator_objects{
 
         return $("(//android.widget.ImageView[@content-desc='More options'])[1]")
     }
+
+    get clearHistoryPermanently(){
+
+        return $("//android.widget.Button[contains(@text, 'Clear')]")
+    }
 }
 
 module.exports = new calculator_objects();
