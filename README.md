@@ -53,7 +53,7 @@ echo $ANDROID_HOME
 
 #### 1. Clone this repository into you local env
 #### 2. Launch this project using Visual Studio Code
-#### 3. Launch terminal and run this command
+#### 3. Launch the in build terminal of visual studio code and run this command
 ```
 npm install
 ```
